@@ -135,7 +135,7 @@ article#web_content >div:nth-of-type(5), article>div:nth-of-type(6) {
 }
 
 article#client_feelback {
-  height: 90vh;
+  /* height: 90vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -222,6 +222,7 @@ footer > div:nth-of-type(3) img {
 @media screen and (max-width: 720px) {
   header {
     background-image: url("images/mobile/image-header.jpg");
+    max-height: 300px;
   }
   #navigation::before {
     content: url("images/icon-hamburger.svg");
@@ -238,7 +239,7 @@ footer > div:nth-of-type(3) img {
     background-color: yellow;
   }
   #navigation:hover nav {
-    position: fixed;
+    position: absolute;
     display: flex;
     right: 30px;
     top: 80px;
