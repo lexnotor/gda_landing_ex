@@ -54,6 +54,16 @@ header {
 }
 #header_bottom {
   text-align: center;
+  animation: 1s slidein infinite alternate;
+}
+
+@keyframes slidein {
+  from {
+    padding-top: 25px;
+  }
+  to {
+    padding-top: 0px;
+  }
 }
 
 header #site_title {
