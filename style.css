@@ -25,7 +25,7 @@ html, body {
   margin: 0px;
 }
 * {
-  transition: 1s;
+  transition: .2s;
   font-family: "calibri";
 }
 .serif_title {
@@ -76,6 +76,7 @@ header nav span {
   color: white;
   padding: 15px;
   cursor: pointer;
+  font-weight: 900;
 }
 header nav span:hover {
   text-decoration: underline;
@@ -84,6 +85,10 @@ header nav span:last-of-type {
   background-color: white;
   color: black;
   border-radius: 30px;
+}
+header nav span:last-of-type:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgb(255, 255, 255);
 }
 article#web_content {
   display: flex;
@@ -142,6 +147,18 @@ article#web_content >div:nth-of-type(5), article>div:nth-of-type(6) {
   font-size: 1.2em;
   margin-bottom: 2vw;
   color: rgb(62, 78, 85);
+}
+.article_learn_more.pink {
+  text-decoration: underline solid rgba(254, 117, 99, 0.3) 5px;
+}
+.article_learn_more.pink:hover {
+  text-decoration: underline solid rgba(254, 117, 99) 5px;
+}
+.article_learn_more.yellow {
+  text-decoration:underline solid rgba(255, 214, 2, 0.3) 5px;
+}
+.article_learn_more.yellow:hover {
+  text-decoration:underline solid rgba(255, 214, 2) 5px;
 }
 
 article#client_feelback {
@@ -215,7 +232,7 @@ footer > div {
 footer > div:nth-of-type(1) {
   padding: 30px;
   font-size: 2.6em;
-  font-weight: bolder;
+  font-weight: 900;
 }
 footer > div:nth-of-type(2) span {
   margin: 0 30px;
@@ -224,10 +241,23 @@ footer span a {
   color: inherit;
   text-decoration: none;
 }
-footer > div:nth-of-type(3) img {
+footer span a:hover {
+  color: white
+}
+footer > div:nth-of-type(3) img, footer .mdi {
   width: 30px;
   margin: 10vh 7px;
 }
+footer .mdi {
+  display: inline-block;
+  font-size: 30px;
+  color: rgb(37, 78, 70);
+  margin: 10vh 7px;
+}
+footer .mdi:hover {
+  color: rgb(255, 255, 255);
+}
+
 
 @media screen and (max-width: 720px) {
   header {
